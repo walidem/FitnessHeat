@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Progrès Quotidien | FitnessHeat</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="progres.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1>Progrès Quotidien</h1>
+        <p id="currentDate"></p>
+
+        <div class="box" id="goalBox">
+            <h2>Objectif</h2>
+        <form id="dailyProgress">
+            <div class="radio-buttons">
+                <input type="radio" id="weightLoss" name="goal" value="Perte de poids">
+                <label for="weightLoss">Perte de poids</label>
+
+                <input type="radio" id="massGain" name="goal" value="Gain de masse">
+                <label for="massGain">Gain de masse</label>
+
+                <input type="radio" id="balancedLife" name="goal" value="Vie Équilibrée">
+                <label for="balancedLife">Vie Équilibrée</label>
+            </div>
+        </div>    
+
+        <div class="data-entry">
+            <div class="entry">
+                <img src="image/poids.png" alt="Poids">
+                <h3>Poids (Kg)</h3>
+                <input type="text" id="weight">
+            </div>
+            <div class="entry">
+                <img src="image/calories.png" alt="Calories">
+                <h3>Calories (Kcal)</h3>
+                <input type="text" id="calories">
+            </div>
+            <div class="entry">
+                <img src="image/sommeil.png" alt="Sommeil">
+                <h3>Sommeil (heures)</h3>
+                <input type="text" id="sleep">
+            </div>
+        </div>
+
+        <button type="submit" class="button-style save-button">Enregistrer</button>
+        </form>
+    </main>
+
+    <script src="progres.js"></script>
+
+    <div id="footer"></div>
+    <script src="headerfooter.js"></script>
+</body>
+</html>

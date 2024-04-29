@@ -1,0 +1,171 @@
+/* Styles pour la page index */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  text-align: center;
+}
+
+/* Conteneur principal de la section */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 95%;
+  }
+
+/* Conteneur des boîtes */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+/* Boîtes individuelles */
+.box {
+    width: 20%;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-color: lightgray;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Spécifique à la boîte 'Programme' */
+.program-box {
+    width: 40%;
+    flex-grow: 1;
+}
+
+.box h3, .box p {
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Couleurs spécifiques pour chaque boîte */
+.calorie-box { background: linear-gradient(#ff0000, #720000); }
+.sleep-box { background: linear-gradient(#3131ff, #00009e); }
+.weight-box { background: linear-gradient(#fbff00, #facc37); }
+.goal-box { background: linear-gradient(#00bd00, #006d00); }
+.program-box { background: linear-gradient(#ff8c00, #884400); }
+
+.calorie-box h3, .calorie-box p { color: #000;}
+.sleep-box h3, .sleep-box p { color: #fff;}
+.weight-box h3, .weight-box p { color: #000;}
+.goal-box h3, .goal-box p { color: #fff;}
+.program-box h3, .program-box p { color: #fff;}
+
+/* Logo dans les boîtes */
+.box-logo {
+    display: block;
+    margin: 10px auto;
+    width: 30px;
+    height: 30px;
+}
+
+/* Conteneur pour les sections de catégorie */
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Sections de catégorie */
+.category-section {
+    background-color: lightgray;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    flex-grow: 1;
+    max-width: 48%;
+    box-sizing: border-box;
+}
+
+.category-section h2 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.category-section p {
+  margin-bottom: 20px;
+}
+
+.hyperlink-style {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hyperlink-style:hover {
+  transform: scale(1.05);
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Styles pour les boutons */
+.button-style,
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button-style:hover,
+button:hover {
+  background-color: #333333;
+}
+
+/* Adaptation pour les écrans de taille moyenne */
+@media (min-width: 601px) and (max-width: 1200px) {
+    .category-section {
+      max-width: 48%;
+    }
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 600px) {
+    .box {
+      width: 100%;
+    }
+
+    .program-box {
+        width: 100%;
+    }
+
+    .content {
+      justify-content: center;
+    }
+
+    .category-section {
+      max-width: 100%;
+    }
+}

@@ -1,0 +1,124 @@
+/* Styles généraux */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour les boîtes */
+.box {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.082);
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+/* Style pour le titre des programmes actifs */
+.program-box h2 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.program-box h2::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: black;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+
+/* Styles spécifiques pour les boîtes de suivi et d'historique */
+.progress-tracking, .program-history {
+    max-width: 45%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 800px) {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Styles pour les tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+/* Style pour les titres des boîtes */
+.box h2, .box h3 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Styles pour positionner les boîtes côte à côte sur les grands écrans */
+@media (min-width: 800px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Adaptations pour les petits écrans */
+@media (max-width: 600px) {
+    .progress-tracking, .program-history {
+        max-width: 100%;
+    }
+}
+
+/* Style pour les boutons */
+.button-style,
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button-style:hover,
+button:hover {
+  background-color: #333333;
+}

@@ -1,0 +1,110 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body > .dashboard-content {
+    flex-grow: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.dashboard-content h1 {
+    color: red;
+    margin-bottom: 30px;
+}
+
+.dashboard-section {
+    flex: 1;
+    margin: 0 2.5%;
+    align-self: flex-start;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    min-height: auto;
+    min-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-section h2 {
+    color: #b22222;
+}
+
+.dashboard-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+.dashboard-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styles pour la fenêtre modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.modal-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #b22222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .dashboard-content {
+        justify-content: center;
+    }
+    .dashboard-section {
+        width: 90%;
+        margin: 10px 0;
+    }
+}

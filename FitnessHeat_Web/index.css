@@ -1,0 +1,159 @@
+/* Styles pour la page index */
+
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+font-family: Arial, sans-serif;
+background-color: rgb(255, 255, 255);
+color: black;
+}
+
+.main-content {
+flex: 1;
+}
+
+.banner {
+display: flex;
+justify-content: center;
+background: linear-gradient(to right, red, black);
+color: white;
+padding: 20px;
+margin: 20px 0;
+border-radius: 10px;
+}
+
+.banner-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+}
+
+.banner-text, .banner-images {
+flex: 1;
+text-align: center;
+}
+
+.banner-text h1 {
+font-size: 2.5em;
+}
+
+.banner-text p {
+font-size: 1.2em;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.banner-text button {
+background-color: black;
+color: white;
+border: none;
+padding: 10px 15px;
+cursor: pointer;
+font-size: 1em;
+border-radius: 5px;
+transition: transform 0.3s ease;
+}
+
+.banner-text button:hover {
+background-color: #333333;
+transform: translateY(-2px);
+}
+
+.circular-image {
+border-radius: 50%;
+width: 100px;
+height: 100px;
+object-fit: cover;
+margin: 0 auto;
+}
+
+.main-section {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 20px;
+}
+
+.category-section {
+background-color: lightgray;
+text-align: center;
+padding: 40px;
+border-radius: 10px;
+margin-bottom: 30px;
+width: calc(50% - 30px);
+box-sizing: border-box;
+}
+
+.category-section h2 {
+color: black;
+margin-bottom: 10px;
+}
+
+.category-section p {
+margin-bottom: 20px;
+}
+
+.hyperlink-style {
+display: inline-block;
+margin-bottom: 20px;
+color: red;
+text-decoration: none;
+font-weight: bold;
+transition: transform 0.2s ease-in-out;
+}
+
+.hyperlink-style:hover {
+transform: scale(1.05);
+}
+
+.section-image {
+width: 100%;
+height: auto;
+object-fit: cover;
+margin-top: 20px;
+border-radius: 10px;
+}
+
+.button-style, button {
+background-color: black;
+color: white;
+border: none;
+padding: 10px 15px;
+margin-left: 10px;
+cursor: pointer;
+border-radius: 5px;
+text-decoration: none;
+display: inline-block;
+transition: background-color 0.3s ease;
+}
+
+.button-style:hover, button:hover {
+background-color: #333333;
+}
+
+@media (max-width: 600px) {
+.banner {
+flex-direction: column;
+}
+.banner-text, .banner-images {
+    max-width: 100%;
+}
+
+.main-section {
+    flex-direction: column;
+}
+
+.category-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    min-width: auto;
+    width: 100%;
+}
+}

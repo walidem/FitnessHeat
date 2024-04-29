@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mot de Passe Oublié | FitnessHeat</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="motdepasse.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="password-reset-form-wrapper">
+        <div class="password-reset-form">
+            <h2>Récupération de mot de passe</h2>
+            <form action="/submit_password_reset" method="post">
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-email">Confirmation du Email :</label>
+                    <input type="email" id="confirm-email" name="confirm-email" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Continuer</button>
+                </div>
+            </form>
+            <p><a href="inscription.html">S'inscrire</a></p>
+            <p><a href="connexion.html">Se connecter</a></p>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="headerfooter.js"></script>
+
+</body>
+</html>

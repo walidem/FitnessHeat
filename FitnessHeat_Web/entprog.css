@@ -1,0 +1,74 @@
+/* Styles généraux */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.program-form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.program-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.program-form input[type="text"],
+.program-form select,
+.program-form textarea,
+.program-form input[type="file"] {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.program-form textarea {
+    height: 100px;
+}
+
+.button-style {
+    display: block;
+    width: calc(100% - 20px);
+    background-color: #880000;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .program-form {
+        width: 90%;
+        max-width: none;
+    }
+}

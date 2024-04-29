@@ -1,0 +1,109 @@
+/* Styles généraux */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 0;
+    flex-grow: 1;
+}
+
+/* Style pour le titre principal */
+main h1 {
+    color: green;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+main h2 {
+    color: green;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.programs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+/* Style pour les boîtes de programme */
+.program-box {
+    border: 1px solid black;
+    padding: 10px;
+    flex-basis: calc(50% - 40px);
+    max-width: 500px;
+    text-align: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.program-box h2 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+
+.program-box p {
+    flex-grow: 1;
+}
+
+.follow-button, .download-button, .modify-button, .delete-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 98%;
+    margin: 10px auto;
+    display: block;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.follow-button, .delete-button {
+    background-color: #4CAF50;
+}
+
+.download-button, .modify-button {
+    background-color: #1E90FF;
+}
+
+.follow-button::after, .download-button::after, .modify-button::after, .delete-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.follow-button:hover::after, .download-button:hover::after, .modify-button:hover::after, .delete-button:hover::after {
+    opacity: 0.2;
+}
+
+/* Responsivité */
+@media (max-width: 600px) {
+    .nutrition-box {
+        flex-basis: 100%;
+    }
+}

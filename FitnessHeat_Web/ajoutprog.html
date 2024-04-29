@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" class="add-program-page">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un Programme | FitnessHeat</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="entprog.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1>Ajouter un Programme</h1>
+
+        <form id="addProgramForm" class="program-form">
+            <label for="programType">Type de Programme:</label>
+            <select id="programType" name="programType">
+                <option value="Entrainement">Entraînement</option>
+                <option value="Nutrition">Nutrition</option>
+            </select>
+
+            <label for="programFile">Déposer le fichier PDF:</label>
+            <input type="file" id="programFile" name="programFile" accept=".pdf">
+
+            <label for="programTitle">Titre du Programme:</label>
+            <input type="text" id="programTitle" name="programTitle">
+
+            <label for="programDescription">Description:</label>
+            <textarea id="programDescription" name="programDescription"></textarea>
+
+            <label for="programCategory">Catégorie:</label>
+            <select id="programCategory" name="programCategory">
+                <option value="perte_de_poids">Perte de poids</option>
+                <option value="vie_equilibree">Vie Équilibrée</option>
+                <option value="gain_de_masse">Gain de masse</option>
+            </select>
+
+            <button type="button" class="button-style" onclick="handleAddProgram()">Enregistrer</button>
+        </form>
+    </main>
+
+    <div id="footer"></div>
+    <script src="headerfooter.js"></script>
+    <script src="ajoutprog.js"></script>
+
+</body>
+</html>

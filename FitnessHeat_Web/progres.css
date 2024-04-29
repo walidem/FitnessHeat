@@ -1,0 +1,86 @@
+/* Styles généraux */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style pour la date */
+#currentDate {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Style pour les boîtes */
+.box {
+    border: 1px solid black;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Styles pour les boutons radio */
+.radio-buttons {
+    margin: 20px 0;
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-buttons label {
+    margin-right: 20px;
+}
+
+/* Style pour les entrées de données */
+.data-entry .entry {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.data-entry .entry img {
+    width: 100px;
+    height: auto;
+}
+
+.data-entry .entry h3 {
+    margin: 5px 0;
+}
+
+.data-entry .entry input[type="text"] {
+    margin-top: 5px;
+}
+
+/* Styles pour le bouton Enregistrer */
+.save-button {
+    background-color: rgb(204, 0, 0);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.save-button:hover {
+    background-color: #a52a2a;
+}
+

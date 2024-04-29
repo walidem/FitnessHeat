@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur | FitnessHeat</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="profile-content">
+        <div class="profile-container">
+            <!-- Formulaire de profil -->
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="matricule">Matricule:</label>
+                    <input type="text" id="matricule" name="matricule">
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Prénom:</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Nom:</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Courriel:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Date de Naissance:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Années d'Expérience:</label>
+                    <input type="number" id="experience" name="experience" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="specialisations">Specialisations:</label>
+                    <textarea id="specialisations" name="specialisations"></textarea>
+                </div>
+
+                <!-- Bouton Enregistrer -->
+                <div class="form-group">
+                    <button type="submit" class="save-button">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="headerfooter.js"></script>
+    <script src="profil-entraineur.js"></script>
+
+</body>
+</html>

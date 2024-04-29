@@ -1,0 +1,207 @@
+/* Styles pour le header et le footer */
+header, footer {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+header:hover, footer:hover {
+    background-color: darkred;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons button,
+.header-buttons .button-style {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-buttons button:hover,
+.header-buttons .button-style:hover {
+    background-color: #333333;
+}
+
+/* Styles pour le drop down */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
+.dropbtn::after {
+    content: "\25BC";
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: white;
+    color: black;
+    width: 100vw;
+    top: 48px;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    justify-content: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.dropdown-content a::before {
+    content: '';
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.dropdown-content a:first-child::before {
+    background-image: url('image/EntIcon.png');
+}
+
+.dropdown-content a:last-child::before {
+    background-image: url('image/NutIcon.png');
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropbtn:hover {
+    color: white;
+}
+
+/* Styles pour le layout général de la page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+body > main {
+    flex: 1 0 auto;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    flex-shrink: 0;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left, .header-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+        white-space: normal;
+    }
+
+    .header-buttons a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

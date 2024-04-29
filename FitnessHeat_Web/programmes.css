@@ -1,0 +1,87 @@
+/* Style de base pour html et body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style pour le conteneur principal */
+body > div:not(#header):not(#footer) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style pour le contenu principal */
+.content-wrapper {
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Style pour la section des programmes */
+.program-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Style pour les liens à l'intérieur des programmes */
+.programme a {
+    text-decoration: none;
+}
+
+
+/* Style pour chaque programme */
+.programme {
+    flex: 1;
+    margin: 0 2.5%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    min-width: 300px;
+}
+
+/* Style pour les images dans les programmes */
+.programme img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Style pour les titres et paragraphes */
+.programme h2 {
+    color: #b22222;
+}
+.programme p {
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Animation au survol pour chaque programme */
+.programme:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programme:focus {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .program-section {
+        justify-content: center;
+    }
+    .programme {
+        width: 90%;
+        margin: 10px 0;
+    }
+}

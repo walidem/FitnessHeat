@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord | FitnessHeat</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="dashboard-content">
+        <div class="dashboard-section" id="progressionQuotidienne">
+            <h2>Progrès Quotidien</h2>
+            <p>Un outil simple pour enregistrer vos données de sommeil, poids et calories</p>
+            <img src="/image/Progres.png" alt="Progres Quotidien">
+        </div>
+        <div class="dashboard-section" id="journalDeSuivi">
+            <h2>Journal de Suivi</h2>
+            <p>Un journal personnel qui regroupe les données de vos progrès à travers le temps.</p>
+            <img src="/image/Suivi.png" alt="Journal de suivi">
+        </div>
+    </div>
+
+    <!-- Fenêtre modale -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <p>Veuillez vous connecter ou créer un compte pour accéder à ce programme.</p>
+            <button id="goToLogin" class="modal-button">Se connecter</button>
+            <button id="goToSignup" class="modal-button">S'inscrire</button>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+
+    <div id="footer"></div>
+    <script src="headerfooter.js"></script>
+
+</body>
+</html>

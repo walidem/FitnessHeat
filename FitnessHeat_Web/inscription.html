@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription | FitnessHeat</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="registration-form-wrapper">
+        <div class="registration-form">
+            <p>Êtes-vous un entraîneur ?</p>
+            <p><a href="inscription-entraineur.html">S'inscrire</a></p>
+            <h2>Inscription Utilisateur</h2>
+            <form id="userRegistrationForm">
+                <div class="form-group">
+                    <label for="username">Identifiant:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>    
+                <div class="form-group">
+                    <label for="lastname">Nom:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Prénom:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer le mot de passe:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">S'inscrire</button>
+                </div>
+                <div class="social-logos">
+                    <img src="image/facebook.png" alt="Facebook">
+                    <img src="image/google.png" alt="Google">
+                    <img src="image/twitter.png" alt="Twitter">
+                </div>
+                <p><a href="motdepasse.html">Mot de passe oublié ?</a></p>
+                <p>Avez-vous déjà un compte ? </p>
+                <p><a href="connexion.html">Se connecter</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="headerfooter.js"></script>
+    <script src="inscription.js"></script>
+
+</body>
+</html>
